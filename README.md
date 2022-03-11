@@ -40,9 +40,8 @@
 
 2. Configure your URL database ini `next.config.js`
 
-```env: {
+```env
   MONGO_URI="YOUR_MONGO_URI"
-  }
 ```
 
 3. Start the development server
