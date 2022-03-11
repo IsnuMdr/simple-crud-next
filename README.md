@@ -15,9 +15,10 @@
 |   \---models
 |   \---pages
     |   \---api
+        |   \---[id]   
     |   \---employees
-+---styles
-\---utils
+    |   styles
+    |   utils
 ```
 
 ## 2. Libraries & Frameworks
