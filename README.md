@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Table of Content
 
-## Getting Started
+- [Table of Content](#table-of-content)
+  - [1. Folder Structures](#1-folder-structures)
+  - [2. Libraries & Frameworks](#2-libraries--frameworks)
+  - [3. Installation & Set Up](#3-installation--set-up)
+  - [4. License](#4-license)
 
-First, run the development server:
+## 1. Folder Structures
 
 ```bash
-npm run dev
-# or
-yarn dev
++---public
++---src
+|   \---components
+|   \---models
+|   \---pages
+    |   \---api
+    |   \---employees
++---styles
+\---utils
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 2. Libraries & Frameworks
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+| Name                                            | Description                                                            |
+| ----------------------------------------------- | ---------------------------------------------------------------------- |
+| [NextJS](https://nextjs.org/)                   | The React Framework for Production.                                    |
+| [React Hook Form](https://react-hook-form.com/) | Performant, flexible and extensible forms with easy-to-use validation. |
+| [Yup](https://github.com/jquense/yup)           | Yup is a schema builder for runtime value parsing and validation       |
+| [Axios](https://axios-http.com/)                | is a promise-based HTTP Client for node.js and the browser             |
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 3. Installation & Set Up
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Install project dependencies
 
-## Learn More
+```bash
+  yarn install or npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Configure your URL database ini `next.config.js`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env: {
+  MONGO_URI="YOUR_MONGO_URI"
+  }
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Start the development server
 
-## Deploy on Vercel
+```bash
+  yarn dev or npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Build for production
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+  yarn build or npm run build
+```
+
+5. Run production mode
+
+```bash
+  yarn start or npm start
+```
+
+## 4. License
+
+MIT © [Isnu Munandar]https://github.com/IsnuMdr)
